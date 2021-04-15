@@ -14,10 +14,15 @@ body {
 
 
 .contenedor {
+	box-sizing: 1200px;
 	max-width: 1200px;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 }
+.contenedor2{
+	 
+}
+
 
 /* --- --- CONTENEDOR PRINCIPAL --- --- */
 
