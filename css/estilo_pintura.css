@@ -1,0 +1,89 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .cuerpo {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+  }
+  .container{
+      position: relative;
+      width: 1000px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  
+  .container .card{
+    position: relative;
+    max-width: 450px;
+     
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+}
+
+.container .card .imgbx{
+    
+    max-width: 150px;
+    flex: 0 0 150px;
+}
+
+.container .card .imgbx img{
+    max-width: 280%;
+}
+
+.container .card .content{
+    margin-left: 20px;
+}
+
+@media (max-width: 991px){
+    .container
+    {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px){
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .card 
+    {
+        flex-direction: column;
+        max-width: 350px;
+    }
+    .container .card .imgbx
+    {
+        max-width: 100%;
+    }
+    .container .card .content
+    {
+        margin-left: 0px;
+    }
+}
+
+.pie_pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+  }
+  .pie_pagina>*:first-child {
+    align-self: stretch;
+  }
+  .pie_pagina .selected {
+    align-self: center;
+  }
