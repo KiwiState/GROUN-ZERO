@@ -253,7 +253,7 @@ body {
   display: block;
 }
 
-.obra-box input[type="text"], .obra-box input[type="password"], .obra-box input[type="date"] {
+.obra-box input[type="text"], .obra-box input[type="date"] {
   border: none;
   border-bottom: 1px solid rgb(0, 0, 0);
   background: transparent;
