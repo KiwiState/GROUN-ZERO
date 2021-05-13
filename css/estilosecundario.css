@@ -62,7 +62,7 @@ body {
     left: calc(50% - 50px);
   }
   
-  .login-box h1 {
+  .login-box h1, .register-box h1{
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
@@ -134,7 +134,7 @@ body {
   /*registr*/
   .register-box {
     width: 320px;
-    height: 520px;
+    height: 530px;
     background: rgb(250, 250, 250);
     color: rgb(0, 0, 0);
     top: 50%;
@@ -202,4 +202,15 @@ body {
     color: rgb(0, 0, 0);
     font-size: 16px;
   }
+/*contacto*/
+  .contacto-box input[type="text"], .contacto-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+  }
+
   
