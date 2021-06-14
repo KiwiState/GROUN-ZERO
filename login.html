@@ -46,11 +46,11 @@
       <form method="POST" enctype="multipart/formdata" name="login">
         <!-- USERNAME INPUT -->
         <label for="usuario">Usuario/Correo</label>
-        <input name="nombre_usuario" type="text" value="" placeholder="Ingrese nombre usuario/correo" autocomplete="on" required>
+        <input name="nombre_usuario" type="text" id ="correo" value="" placeholder="Ingrese nombre usuario/correo" autocomplete="on" required>
         <!-- PASSWORD INPUT -->
         <label for="Contraseña">Contraseña</label>
         <input name="contraseña" type="password" value="" placeholder="Ingrese su contraseña" autocomplete="on" required>
-        <input type="submit" value="Iniciar Sesi&oacute;n">
+        <input type="submit" value="Iniciar Sesi&oacute;n" class="btn btn-success" onclick="isEmail(document.getElementById('correo').value)">  
         <a href="#">¿Olvid&oacute; su Contraseña?</a><br>
         <a href="registro.html">¿No posee una cuenta?</a>
       </form>
@@ -68,5 +68,16 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     </div>
+
+
+    <script>
+      function isEmail(email) {
+          var expRex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          var esValido = expRex.test(email)
+          if(esValido == false){
+              alert('El correo electronico no es válido')
+          }
+      }
+  </script>
   </body>
 </html>
